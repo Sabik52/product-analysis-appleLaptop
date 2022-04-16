@@ -1,9 +1,11 @@
 import React from 'react';
+import ProductLineChart from '../LinkChart/ProductLineChart';
+
 
 const Deshboard = () => {
     return (
         <div>
-            <h2>This is Deshboard</h2>
+            <ProductLineChart></ProductLineChart>
         </div>
     );
 };
