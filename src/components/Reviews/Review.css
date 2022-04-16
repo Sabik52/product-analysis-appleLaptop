@@ -1,7 +1,16 @@
+.reviews{
+    background-color:rgb(13, 12, 58) ;
+    color: white;
+    padding-top: 10px;
+}
 .card-container{
     display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 10px;
+   margin-right: 20px;
+   margin-left: 10px;
+  
+ 
    
    
 }

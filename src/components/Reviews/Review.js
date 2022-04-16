@@ -11,7 +11,7 @@ const Review = () => {
         setReviews(data))
     }, [])
     return (
-        <div >
+        <div className='reviews' >
             <h2>What Our Customers Say!</h2>
        <div className='card-container'>
        {reviews.map(review=>

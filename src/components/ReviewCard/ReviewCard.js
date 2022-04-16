@@ -14,12 +14,7 @@ const ReviewCard = ({review}) => {
                <StarIcon></StarIcon> 
                <StarIcon></StarIcon> 
                <StarIcon></StarIcon> 
-               
-               
-              
            </div>
-           
-          
         </div>
     );
 };
