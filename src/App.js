@@ -20,6 +20,7 @@ function App() {
        <Route path='/deshboard' element={<Deshboard></Deshboard>}></Route>
        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
        <Route path='/about' element={<About></About>}></Route>
+       <Route path='/review' element={<Review></Review>}></Route>
        <Route path='*' element={<Notfound></Notfound>}></Route>
      </Routes>
     </div>
