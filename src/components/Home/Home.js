@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link} from 'react-router-dom';
+
+
 import './Home.css'
 
 const Home = () => {
+    
+  
     return (
         <div>
            <div className="main-section">
@@ -18,7 +23,9 @@ const Home = () => {
            </div>
            <div className="review-section">
                <h2>Customer Reviews!</h2>
+              <Link className='seemore-btn' to='/review'>See  All Reviews</Link>
            </div>
+         
         </div>
        
     );
