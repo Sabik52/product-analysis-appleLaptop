@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
+import ReviewCard from '../ReviewCard/ReviewCard';
 
 
 import './Home.css'
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews()
     
   
     return (
@@ -23,6 +26,15 @@ const Home = () => {
            </div>
            <div className="review-section">
                <h2>Customer Reviews!</h2>
+               <div className='card-container'>
+       {reviews.slice(0,6).map(review=>
+            <ReviewCard
+            key={review.id}
+            review={review}
+            ></ReviewCard>
+            )}
+       </div>
+
               <Link className='seemore-btn' to='/review'>See  All Reviews</Link>
            </div>
          
